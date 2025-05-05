@@ -15,6 +15,27 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            background: url('/Users/lmargent/Documents/2025/spring_2025/data_science_bc/Sprint_4_material_and_exercises/Sprint_4_Project_my_portfolio/portfolio.png.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            position: relative;
+            z-index: 1;
         }
         nav ul {
             list-style: none;
